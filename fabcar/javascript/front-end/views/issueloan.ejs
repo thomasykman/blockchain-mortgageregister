@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Mortgage register</title>
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <h1 class="text-center">
+        Mortgage register
+    </h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/issueloan">Issue loan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/readloan/public">Query public loan information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/readloan/private">Query private loan information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/deactivateloan">Deactivate loan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <form action="/issueloan" method="POST">
+                    <div class="form-group">
+                        <label for="loanUID">
+                            UID
+                        </label>
+                        <input type="text" class="form-control" name="loanUID" />
+                    </div>
+                    <div class="form-group">
+                        <label for="buyer">
+                            Buyer
+                        </label>
+                        <input type="text" class="form-control" name="buyer" />
+                    </div>
+                    <div class="form-group">
+                        <label for="notary">
+                            Notary
+                        </label>
+                        <input type="text" class="form-control" name="notary" />
+                    </div>
+                    <div class="form-group">
+                        <label for="startDate">
+                            Start date
+                        </label>
+                        <input type="text" class="form-control" name="startDate" />
+                    </div>
+                    <div class="form-group">
+                        <label for="endDate">
+                            End date
+                        </label>
+                        <input type="text" class="form-control" name="endDate" />
+                    </div>
+                    <div class="form-group">
+                        <label for="loanValue">
+                            Value
+                        </label>
+                        <input type="text" class="form-control" name="loanValue" />
+                    </div>
+                    <div class="form-group">
+                        <label for="currency">
+                            Currency
+                        </label>
+                        <input type="text" class="form-control" name="currency" />
+                    </div>
+                    <div class="form-group">
+                        <label for="interestRate">
+                            Interest rate
+                        </label>
+                        <input type="text" class="form-control" name="interestRate" />
+                    </div>
+
+                    <button type="submit" class="btn btn-success">
+                        Create loan
+                    </button>
+                </form>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/tether.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/code.js"></script>
+</body>
+
+</html>
