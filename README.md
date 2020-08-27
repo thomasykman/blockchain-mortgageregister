@@ -4,8 +4,8 @@ In short, this repository represents a modified [*fabric-samples*](https://githu
 
 Besides the actual chaincode, there are 2 Node.js processes you can run to start the web application and the API that connects to the Hyperledger Fabric network. 
 
-* Front-end: /fabcar/javascript/front-end/index.js
-* Back-end code: /fabcar/javascript/app.js
+* Front-end: */fabcar/javascript/front-end/index.js*
+* Back-end: */fabcar/javascript/app.js*
 
 We found it very dangerous to limit the contents of this repository to just our own example, as it relies on the files from other examples. Believe me, we've tried. I can't remember how many times I've started the network, installed and instantiated the chaincode, only to find out that something wasn't working and to start all over again. That's why serving this folder as a whole was a safer bet for the submission of our final paper. Demo'ing this was quite nerve-wrecking :)
 
